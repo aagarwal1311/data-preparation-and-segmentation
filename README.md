@@ -38,16 +38,17 @@ coco_subset/
 ```bash
     dataset_download.ipynb
 ```
-    #downloads 8000 images from COCO train2017. <br>
-    #Filter annotations for selected images. <br>
-    #Create binary PNG masks in coco_subset/masks. <br>
-    #Handles all the edge cases.<br>
+This script:<br>
+    - downloads 8000 images from COCO train2017. <br>
+    - Filter annotations for selected images. <br>
+    - Create binary PNG masks in coco_subset/masks. <br>
+    - Handles all the edge cases.<br>
 
 3. Train the model:<br>
 ```bash
     python train_unet.py
 ```
-    #The model is a standard U-Net implemented in unet_model.py<br>
+    The model is a standard U-Net implemented in unet_model.py<br>
     This includes:<br>
         - Automatic 80/20 train/test split<br>
         - Dice score and BCE loss computation<br>
