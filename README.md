@@ -63,7 +63,7 @@ coco_subset/
         - Binary IoU
         - Sample visualizations (input, ground truth, prediction)
 
-6. Public WandB dashboard showcasing training metrics can be accessed through following link:
+6. Public WandB dashboard showcasing training metrics can be accessed through following link:<br>
     https://wandb.ai/aditi-agarwal0027-indian-institute-of-science/coco-binary-segmentation
 
 
