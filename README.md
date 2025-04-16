@@ -48,8 +48,8 @@ This script:<br>
 ```bash
     python train_unet.py
 ```
-    The model is a standard U-Net implemented in unet_model.py<br>
-    This includes:<br>
+The model is a standard U-Net implemented in unet_model.py<br>
+This includes:<br>
         - Automatic 80/20 train/test split<br>
         - Dice score and BCE loss computation<br>
         - TQDM-based live progress for both training and validation<br>
