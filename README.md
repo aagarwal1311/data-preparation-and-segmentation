@@ -61,7 +61,7 @@ This script:<br>
 5. Logging & Evaluation<br>
     The public wandb shared logs loss, dice score, and predictions for each epoch<br>
 
-6. Output<br>
+6. <b>Evaluation and Output</b><br>
     After training, predicted masks and model checkpoints are saved. <br>
     ```bash
     python evaluate_checkpoint.py
@@ -70,8 +70,7 @@ This script:<br>
         - Dice Score<br>
         - Binary IoU<br>
         - Sample visualizations (input, ground truth, prediction)<br>
-
-7. Public WandB dashboard showcasing training metrics can be accessed through following link:<br>
+The Public WandB dashboard (showcasing training metrics, logs loss, dice score, and predictions for each epoch) can be accessed through following link:<br>
     https://wandb.ai/aditi-agarwal0027-indian-institute-of-science/coco-binary-segmentation
 
 
