@@ -31,17 +31,22 @@ coco_subset/
 ## Usage Setup
 
 1. Install dependencies:<br>
+```bash
     pip install -r requirements.txt
-
+```
 2. Download and prepare dataset:<br>
-    Run dataset_download.ipynb <br>
+```bash
+    dataset_download.ipynb
+```
     #downloads 8000 images from COCO train2017. <br>
     #Filter annotations for selected images. <br>
     #Create binary PNG masks in coco_subset/masks. <br>
     #Handles all the edge cases.<br>
 
 3. Train the model:<br>
-    python train_unet.py<br>
+```bash
+    python train_unet.py
+```
     #The model is a standard U-Net implemented in unet_model.py<br>
     This includes:<br>
         - Automatic 80/20 train/test split<br>
@@ -57,7 +62,9 @@ coco_subset/
 
 6. Output<br>
     After training, predicted masks and model checkpoints are saved. <br>
-    evaluation script: python evaluate_checkpoint.py <br>
+    ```bash
+    python evaluate_checkpoint.py
+    ```
     Evaluation includes:<br>
         - Dice Score<br>
         - Binary IoU<br>
