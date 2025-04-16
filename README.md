@@ -69,5 +69,5 @@ This includes:<br>
 
 The Public WandB dashboard (showcasing training metrics, logs loss, dice score, and predictions for each epoch) can be accessed through following link:<br>
     https://wandb.ai/aditi-agarwal0027-indian-institute-of-science/coco-binary-segmentation
-https://github.com/aagarwal1311/data-preparation-and-segmentation.git
+
 
