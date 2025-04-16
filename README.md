@@ -3,13 +3,13 @@
 This project performs binary segmentation using a U-Net architecture on a subset of the COCO 2017 dataset (8000 images). It includes dataset downloading, annotation filtering, binary mask generation, and training a segmentation model.
 
 ## 📂 Directory Structure
-'''
+```bash
 coco_subset/
 ├── images/                   ← 8000 downloaded COCO images
 ├── annotations/              ← Original COCO annotations (e.g. instances_train2017.json)
 ├── annotations_subset.json   ← Filtered annotations for selected 8000 images
 └── masks/                    ← Binary segmentation masks (PNG, 0=background, 1=object)
-'''
+```
 
 ## Edge Cases Handled
 - Skips annotations with missing/empty or invalid segmentations
