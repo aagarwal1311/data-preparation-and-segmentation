@@ -60,9 +60,9 @@ This includes:<br>
 4. <b>Evaluation and Output</b><br>
     After predicted masks and model checkpoints are saved, model is evaluated over validation data: <br>
         Evaluation metrics includes:<br>
-        - Dice Score<br>
-        - Binary IoU<br>
-        - Sample visualizations (input, ground truth, prediction)<br>
+        - Dice Coefficient<br>
+        - Binary IoU Score<br>
+        - Pixel Accuracy<br>
     ```bash
     python evaluate_checkpoint.py
     ```
