@@ -58,14 +58,15 @@ This script:<br>
     Model weights and metrics are saved and tracked on the public wandb project.
 
 4. <b>Evaluation and Output</b><br>
-    After training, predicted masks and model checkpoints are saved. <br>
-    ```bash
-    python evaluate_checkpoint.py
-    ```
-    Evaluation includes:<br>
+    After predicted masks and model checkpoints are saved, model is evaluated over validation data: <br>
+        Evaluation metrics includes:<br>
         - Dice Score<br>
         - Binary IoU<br>
         - Sample visualizations (input, ground truth, prediction)<br>
+    ```bash
+    python evaluate_checkpoint.py
+    ```
+
 The Public WandB dashboard (showcasing training metrics, logs loss, dice score, and predictions for each epoch) can be accessed through following link:<br>
     https://wandb.ai/aditi-agarwal0027-indian-institute-of-science/coco-binary-segmentation
 
