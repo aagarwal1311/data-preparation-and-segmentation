@@ -30,11 +30,11 @@ coco_subset/
 
 ## Usage Setup
 
-1. Install dependencies:<br>
+1. <b>Install dependencies:</b><br>
 ```bash
     pip install -r requirements.txt
 ```
-2. Download and prepare dataset:<br>
+2. <b>Download and prepare dataset:</b><br>
 ```bash
     dataset_download.ipynb
 ```
@@ -44,7 +44,7 @@ This script:<br>
     - Create binary PNG masks in coco_subset/masks. <br>
     - Handles all the edge cases.<br>
 
-3. Train the model:<br>
+3. <b>Train the model:</b><br>
 ```bash
     python train_unet.py
 ```
@@ -57,11 +57,7 @@ This script:<br>
     <br>
     Model weights and metrics are saved and tracked on the public wandb project.
 
-
-5. Logging & Evaluation<br>
-    The public wandb shared logs loss, dice score, and predictions for each epoch<br>
-
-6. <b>Evaluation and Output</b><br>
+4. <b>Evaluation and Output</b><br>
     After training, predicted masks and model checkpoints are saved. <br>
     ```bash
     python evaluate_checkpoint.py
