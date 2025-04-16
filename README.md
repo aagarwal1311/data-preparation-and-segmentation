@@ -12,9 +12,9 @@ coco_subset/
 ```
 
 ## Edge Cases Handled
-- Skips annotations with missing/empty or invalid segmentations
-- Handles overlapping polygons (merged as foreground)
-- Ignores polygons with fewer than 3 points
+- Skips annotations with missing/empty or invalid segmentations<br>
+- Handles overlapping polygons (merged as foreground)<br>
+- Ignores polygons with fewer than 3 points<br>
 
 
 ## Implementation Overview
@@ -30,40 +30,40 @@ coco_subset/
 
 ## Usage Setup
 
-1. Install dependencies:
+1. Install dependencies:<br>
     pip install -r requirements.txt
 
-2. Download and prepare dataset:
-    Run dataset_download.ipynb 
-    #downloads 8000 images from COCO train2017. 
-    #Filter annotations for selected images. 
-    #Create binary PNG masks in coco_subset/masks. 
-    #Handles all the edge cases.
+2. Download and prepare dataset:<br>
+    Run dataset_download.ipynb <br>
+    #downloads 8000 images from COCO train2017. <br>
+    #Filter annotations for selected images. <br>
+    #Create binary PNG masks in coco_subset/masks. <br>
+    #Handles all the edge cases.<br>
 
-3. Train the model:
-    python train_unet.py
-    #The model is a standard U-Net implemented in unet_model.py
-    This includes:
-        - Automatic 80/20 train/test split
-        - Dice score and BCE loss computation
-        - TQDM-based live progress for both training and validation
-        - Visual logs and metrics in Weights & Biases
-    
+3. Train the model:<br>
+    python train_unet.py<br>
+    #The model is a standard U-Net implemented in unet_model.py<br>
+    This includes:<br>
+        - Automatic 80/20 train/test split<br>
+        - Dice score and BCE loss computation<br>
+        - TQDM-based live progress for both training and validation<br>
+        - Visual logs and metrics in Weights & Biases<br>
+    <br>
     Model weights and metrics are saved and tracked on the public wandb project.
 
 
-4. Logging & Evaluation
-    The public wandb shared logs loss, dice score, and predictions for each epoch
+5. Logging & Evaluation<br>
+    The public wandb shared logs loss, dice score, and predictions for each epoch<br>
 
-5. Output
-    After training, predicted masks and model checkpoints are saved. 
-    evaluation script: python evaluate_checkpoint.py
-    Evaluation includes:
-        - Dice Score
-        - Binary IoU
-        - Sample visualizations (input, ground truth, prediction)
+6. Output<br>
+    After training, predicted masks and model checkpoints are saved. <br>
+    evaluation script: python evaluate_checkpoint.py <br>
+    Evaluation includes:<br>
+        - Dice Score<br>
+        - Binary IoU<br>
+        - Sample visualizations (input, ground truth, prediction)<br>
 
-6. Public WandB dashboard showcasing training metrics can be accessed through following link:<br>
+7. Public WandB dashboard showcasing training metrics can be accessed through following link:<br>
     https://wandb.ai/aditi-agarwal0027-indian-institute-of-science/coco-binary-segmentation
 
 
